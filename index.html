@@ -1,0 +1,1355 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/glider.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/1.0.0/css/font-awesome.css"
+      integrity="sha512-YX9NLok9RLg+o5JkA2Whp1kPDCBCEUolTyYykJVOe1xcaTNebXU/x02TxV0LpVYqVNJV5NVjyoMW0jHnJWICKg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Evento</title>
+  </head>
+  <body class="content">
+    <div class="tela">
+      <header id="header">
+        <nav>
+          <div class="navbar">
+            <input type="checkbox" name="" id="menu-hamburgue" />
+            <label class="menuHamburgue" for="menu-hamburgue">
+              <div class="menu">
+                <span class="hamburgue"> </span>
+              </div>
+            </label>
+            <div class="nav-logo">
+              <a href="index.html">
+                <img src="./img/Blue2.png" alt="logo da site" />
+              </a>
+            </div>
+            <div class="nav-links">
+              <div class="sidebar-itens">
+                <div class="user">
+                  <a href="#"
+                    ><i class="bx bxs-user-circle"></i><span>Login</span></a
+                  >
+                </div>
+                <!-- <div>
+                    <label class="switch">
+                      <input type="checkbox">
+                      <span class="slider round"></span>
+                    </label>
+                  </div> -->
+              </div>
+              <ul class="links">
+                <li>
+                  <a class="nav-a" href="#" rel="next">Criar Evento</a>
+                </li>
+                <li>
+                  <a href="#" rel="next">Categoria</a>
+                  <i class="bx bxs-chevron-down arrow htmlcss-arrow"></i>
+                  <ul class="htmlcss-sub-menu sub-menu">
+                    <li><a href="#">Shows</a></li>
+                    <li><a href="#">Teatro</a></li>
+                    <li><a href="#">Esporte</a></li>
+                    <li><a href="#">Cursos</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" rel="next">Lugares</a>
+                  <i class="bx bxs-chevron-down arrow js-arrow"></i>
+                  <ul class="js-sub-menu sub-menu">
+                    <li><a href="#">São Paulo</a></li>
+                    <li><a href="#">Brasilia </a></li>
+                    <li><a href="#">Rio de Janeiro</a></li>
+                    <li><a href="#">Fortaleza</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="nav-canto">
+              <div class="darkLight">
+                <div class="dark-light">
+                  <i class="bx bx-moon moon"></i>
+                  <i class="bx bx-sun sun"></i>
+                </div>
+              </div>
+              <div class="nav-button">
+                <a href="#" class="btt-entrar btt"><p>Entrar</p> </a>
+                <a href="#" class="btt-login btt">
+                  <svg
+                    class="icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 14 14"
+                    data-v-fafe0f56=""
+                  >
+                    <g transform="translate(0)" data-v-fafe0f56="">
+                      <path
+                        class="a"
+                        d="M3.6,12.906H1.66a.556.556,0,0,1-.437-.208.571.571,0,0,1-.116-.479A6.042,6.042,0,0,1,6.861,7.435l.139,0,.141,0a5.99,5.99,0,0,1,1.975.381A.547.547,0,1,0,9.5,6.791q-.136-.051-.273-.1a3.719,3.719,0,1,0-4.452,0A7.112,7.112,0,0,0,.036,12,1.661,1.661,0,0,0,1.66,14H3.6a.547.547,0,0,0,0-1.094Zm.779-9.188A2.625,2.625,0,1,1,7.128,6.341H6.872A2.628,2.628,0,0,1,4.375,3.719Z"
+                        transform="translate(0)"
+                        data-v-fafe0f56=""
+                      ></path>
+                      <path
+                        class="a"
+                        d="M155.589,313.864a1.473,1.473,0,0,0-1.345-.864h-1.709a1.448,1.448,0,0,0-1.368.924c-.029.075-.064.169-.1.279h-3.581a.547.547,0,0,0-.392.166l-.939.968a.547.547,0,0,0,0,.764l.957.974a.547.547,0,0,0,.39.164h1.777a.547.547,0,0,0,0-1.094h-1.548l-.422-.429.406-.418h3.76a.547.547,0,0,0,.531-.417,4.516,4.516,0,0,1,.18-.563.358.358,0,0,1,.348-.223h1.707a.373.373,0,0,1,.347.217,3.532,3.532,0,0,1,.323,1.394,3.636,3.636,0,0,1-.321,1.419.373.373,0,0,1-.343.224h-1.727a.389.389,0,0,1-.353-.242,3.636,3.636,0,0,1-.169-.541.547.547,0,1,0-1.064.255,4.7,4.7,0,0,0,.222.7,1.475,1.475,0,0,0,1.362.919h1.73a1.466,1.466,0,0,0,1.345-.88,4.734,4.734,0,0,0,.412-1.859A4.63,4.63,0,0,0,155.589,313.864Z"
+                        transform="translate(-142.007 -304.441)"
+                        data-v-fafe0f56=""
+                      ></path>
+                      <circle
+                        class="a"
+                        cx="0.547"
+                        cy="0.547"
+                        r="0.547"
+                        transform="translate(11.238 10.719)"
+                      ></circle>
+                    </g>
+                  </svg>
+                  Login
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="zona-bt">
+          <button id="increase-font-size" class="bt">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+          </button>
+          <button id="decrease-font-size" class="bt">
+            <i class="fa-solid fa-magnifying-glass-minus"></i>
+          </button>
+        </div>
+        <div class="div-video">
+          <span class="span-video">
+            <h1><b>Se liga no evento</b> que todos comentam</h1>
+          </span>
+          <video id="video" controls>
+            <source src="video.mp4" type="video/mp4" />
+            <track
+              kind="subtitles"
+              src="legenda.vtt"
+              srclang="pt-br"
+              label="PT-BR"
+              default
+            />
+          </video>
+        </div>
+        <div class="row form">
+          <form action="/busca/">
+            <button class="bt-pesquisa">
+              <svg
+                style="width: 20px"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"
+                ></path>
+              </svg>
+            </button>
+            <input
+              type="text"
+              name="s"
+              placeholder="Buscar evento..."
+              autocomplete="off"
+            />
+            <button class="bt-buscar">Buscar</button>
+          </form>
+        </div>
+        <!--
+        <div class="categoria">
+          <div class="circule">
+            <a href="#">
+              <div class="div-circule">
+                <div class="circule-img">
+                  <img
+                    src="https://images.sympla.com.br/64e4b80f9cba7.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="circule-desc"><h3>Música</h3></div>
+            </a>
+          </div>
+          <div class="circule">
+            <a href="#">
+              <div class="div-circule">
+                <div class="circule-img">
+                  <img
+                    src="https://images.sympla.com.br/64e4b7b746a10.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="circule-desc"><h3>Espetáculo</h3></div>
+            </a>
+          </div>
+          <div class="circule">
+            <a href="#">
+              <div class="div-circule">
+                <div class="circule-img">
+                  <img
+                    src="https://images.sympla.com.br/64e4b6b13acb4.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="circule-desc"><h3>Infantil</h3></div>
+            </a>
+          </div>
+          <div class="circule">
+            <a href="#">
+              <div class="div-circule">
+                <div class="circule-img">
+                  <img
+                    src="https://images.sympla.com.br/64e4b752baa1f.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="circule-desc"><h3>Passeios</h3></div>
+            </a>
+          </div>
+          <div class="circule">
+            <a href="#">
+              <div class="div-circule">
+                <div class="circule-img">
+                  <img
+                    src="https://images.sympla.com.br/64e4b522cfc6d.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="circule-desc"><h3>Esportes</h3></div>
+            </a>
+          </div>
+          <div class="circule">
+            <a href="#">
+              <div class="div-circule">
+                <div class="circule-img">
+                  <img
+                    src="https://images.sympla.com.br/64e4b7858c400.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="circule-desc"><h3>Palestras</h3></div>
+            </a>
+          </div>
+          -->
+      </header>
+
+      <br />
+      <div class="etapa">
+        <div class="etapa-um">
+          <h1>Destaques</h1>
+          <div class="etapa-dois">
+            <div class="div-buttom">
+              <span
+                class="span-button span-button--disabled"
+                data-spec="icon-button"
+              >
+                <button
+                  class="btn--button btn--disableds"
+                  type="button"
+                  disabled=""
+                  aria-disabled="true"
+                >
+                  <i
+                    class="vector-image"
+                    title=""
+                    data-spec="icon"
+                    data-testid="icon"
+                  >
+                    <svg viewBox="0 0 24 24">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M4 12l8 8 1.5-1.5L8 13h12v-2H8l5.5-5.5L12 4z"
+                      ></path>
+                    </svg>
+                  </i>
+                </button>
+              </span>
+              <span class="span-button span-cor" data-spec="icon-button">
+                <button class="btn--button" type="button">
+                  <i
+                    class="vector-image"
+                    title=""
+                    data-spec="icon"
+                    data-testid="icon"
+                  >
+                    <svg viewBox="0 0 24 24">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M10.5 5.5L16 11H4v2h12l-5.5 5.5L12 20l8-8-8-8z"
+                      ></path>
+                    </svg>
+                  </i>
+                </button>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="etapa-fila">
+          <div class="fila">
+            <div class="fila-conteiner">
+              <div class="fila-wrapper">
+                <div class="card">
+                  <a href="#" target="_blank">
+                    <div class="card1">
+                      <div class="card2">
+                        <div class="card-image .image-container">
+                          <div class="image">
+                            <img
+                              alt="cartaz do evento CCXP23"
+                              class="swiper-lazy swiper-lazy-loaded"
+                              src="https://eventos.com.br/background_cards/90a66115ddc91533b2d11e086c8b8482.jpg"
+                            />
+                          </div>
+                        </div>
+                        <div class="content">
+                          <div class="date">
+                            <div class="d d-one">
+                              <span>Qui.</span><strong>30</strong>
+                            </div>
+                            <div class="prefix">à</div>
+                            <div class="d d-two">
+                              <span>Dom. </span><strong>03</strong>
+                            </div>
+                            <div class="moth">Nov / Dez</div>
+                          </div>
+                          <div class="desc">
+                            <span class="city">São Paulo</span>
+                            <h2>CCXP23</h2>
+                            <span class="place">São Paulo Expo</span>
+                          </div>
+                        </div>
+                        <!-- <div class="link">
+                          <a
+                            href="https://www.eventos.com.br/tag/ccxp2023"
+                            class="click"
+                            >Comprar</a
+                          >
+                        </div> -->
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="card">
+                  <a href="#" target="_blank">
+                    <div class="card1">
+                      <div class="card2">
+                        <div class="card-image .image-container">
+                          <div class="image">
+                            <img
+                              alt="cartaz do evento Tomorrowland Brasil "
+                              class="swiper-lazy swiper-lazy-loaded"
+                              src="https://eventos.com.br/background_cards/f8a792079f537e50474caf89ecb9d6b2.jpg"
+                            />
+                          </div>
+                        </div>
+                        <div class="content">
+                          <div class="date">
+                            <div class="d d-one">
+                              <span>Qui.</span><strong>12</strong>
+                            </div>
+                            <div class="prefix">à</div>
+                            <div class="d d-two">
+                              <span>Sab.</span><strong>14</strong>
+                            </div>
+                            <div class="moth">Out</div>
+                          </div>
+                          <div class="desc">
+                            <span class="city">Itú - São Paulo</span>
+                            <h2>Tomorrowland Brasil 2023</h2>
+                            <span class="place">Parque Maeda</span>
+                          </div>
+                        </div>
+                        <!-- <div class="link">
+                          <a
+                            href="https://www.eventos.com.br/tag/ccxp2023"
+                            class="click"
+                            >Comprar</a
+                          >
+                        </div> -->
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="card">
+                  <a href="#" target="_blank">
+                    <div class="card1">
+                      <div class="card2">
+                        <div class="card-image .image-container">
+                          <div class="image">
+                            <img
+                              alt="cartaz do evento XL CBP 2023"
+                              class="swiper-lazy swiper-lazy-loaded"
+                              src="https://eventos.com.br/background_cards/f8d4c78df317e12ba8b0b546930cc433.jpg"
+                            />
+                          </div>
+                        </div>
+                        <div class="content">
+                          <div class="date">
+                            <div class="d d-one">
+                              <span>Ter.</span><strong>17</strong>
+                            </div>
+                            <div class="prefix">à</div>
+                            <div class="d d-two">
+                              <span>Sab. </span><strong>21</strong>
+                            </div>
+                            <div class="moth">Out</div>
+                          </div>
+                          <div class="desc">
+                            <span class="city">Salvador</span>
+                            <h2>XL CBP 2023</h2>
+                            <span class="place"
+                              >Centro de Convenções Salvador</span
+                            >
+                          </div>
+                        </div>
+                        <!-- <div class="link">
+                          <a
+                            href="https://www.eventos.com.br/tag/ccxp2023"
+                            class="click"
+                            >Comprar</a
+                          >
+                        </div> -->
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="card">
+                  <a href="#" target="_blank">
+                    <div class="card1">
+                      <div class="card2">
+                        <div class="card-image .image-container">
+                          <div class="image">
+                            <img
+                              alt="cartaz do evento Grid Experience Velopark"
+                              class="swiper-lazy swiper-lazy-loaded"
+                              src="https://eventos.com.br/background_cards/2e258b13888b45e7705b343498bd5eda.jpg"
+                            />
+                          </div>
+                        </div>
+                        <div class="content">
+                          <div class="date">
+                            <div class="d d-one">
+                              <span>Sab.</span><strong>16</strong>
+                            </div>
+                            <div class="prefix">à</div>
+                            <div class="d d-two">
+                              <span>Dom. </span><strong>17</strong>
+                            </div>
+                            <div class="moth">Set</div>
+                          </div>
+                          <div class="desc">
+                            <span class="city">Nova Santa Rita</span>
+                            <h2>Grid Experience Velopark</h2>
+                            <span class="place">Autódromo Velopark/RS</span>
+                          </div>
+                        </div>
+                        <!-- <div class="link">
+                          <a
+                            href="https://www.eventos.com.br/tag/ccxp2023"
+                            class="click"
+                            >Comprar</a
+                          >
+                        </div> -->
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="card">
+                  <a href="#" target="_blank">
+                    <div class="card1">
+                      <div class="card2">
+                        <div class="card-image .image-container">
+                          <div class="image">
+                            <img
+                              alt="cartas do evento JOGAI POR NÓS"
+                              class="swiper-lazy swiper-lazy-loaded"
+                              src="https://eventos.com.br/background_cards/2334c78a52cf77aba857055c6ef18e96.jpg"
+                            />
+                          </div>
+                        </div>
+                        <div class="content">
+                          <div class="date">
+                            <div class="d d-one">
+                              <span>Sex.</span><strong>08</strong>
+                            </div>
+                            <div class="prefix">à</div>
+                            <div class="d d-two">
+                              <span>Dom. </span><strong>10</strong>
+                            </div>
+                            <div class="moth">Nov / Dez</div>
+                          </div>
+                          <div class="desc">
+                            <span class="city">São Paulo</span>
+                            <h2>JOGAI POR NÓS 23</h2>
+                            <span class="place">Neo Quimica Arena</span>
+                          </div>
+                        </div>
+                        <!-- <div class="link">
+                          <a
+                            href="https://www.eventos.com.br/tag/ccxp2023"
+                            class="click"
+                            >Comprar</a
+                          >
+                        </div> -->
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <div class="etapa">
+        <div class="etapa-um">
+          <h1>Festas e shows</h1>
+          <div class="etapa-dois">
+            <div class="div-button">
+              <button aria-label="Previous" class="glider-prev btn--button">
+                <span><i class="bx bx-left-arrow-alt"></i></span>
+              </button>
+              <button aria-label="Next" class="glider-next btn--button">
+                <span><i class="bx bx-right-arrow-alt"></i></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="etapa-fila">
+          <div class="fila">
+            <div class="glider-contain fila-conteiner">
+              <div class="glider fila-wrapper">
+                <div class="card">
+                  <a href="#" target="_blank">
+                    <div class="card1">
+                      <div class="card2">
+                        <div class="card-image .image-container">
+                          <div class="image">
+                            <img
+                              alt="cartaz do evento Djavam Turne"
+                              class="swiper-lazy swiper-lazy-loaded"
+                              src="https://assets.bileto.sympla.com.br/eventmanager/production/2v3tmvqtvckfcrqj5mar31tt1c3kmc0dgt4j8v8cbu67b0u4nag92cnmtve56nt9itmrnbu7qn2divcdv7s6tdcpmp7muleahqjff9.webp"
+                            />
+                          </div>
+                        </div>
+                        <div class="content">
+                          <div class="date">
+                            <div class="d d-one">
+                              <span>Sex.</span><strong>27</strong>
+                            </div>
+                            <div class="prefix">à</div>
+                            <div class="d d-two">
+                              <span>Sab. </span><strong>28</strong>
+                            </div>
+                            <div class="moth">Out</div>
+                          </div>
+                          <div class="desc">
+                            <span class="city">São Paulo</span>
+                            <h2>Djavam Turne</h2>
+                            <span class="place">São Paulo Expo</span>
+                          </div>
+                        </div>
+                        <!--<div class="link">
+                          <a
+                            href="https://www.eventos.com.br/tag/ccxp2023"
+                            class="click"
+                            >Comprar</a
+                          >
+                        </div>-->
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="card">
+                  <a href="#" target="_blank">
+                    <div class="card1">
+                      <div class="card2">
+                        <div class="card-image .image-container">
+                          <div class="image">
+                            <img
+                              alt="cartaz do evento da Alcione"
+                              class="swiper-lazy swiper-lazy-loaded"
+                              src="https://assets.bileto.sympla.com.br/eventmanager/production/1r7n1v1m2gv9b2eac3qac673f3iv4o0buq5nio0palh3avn9672tur9h52b6tq681oa3o5fc5qc83gqbb2imi9c73bmq02tfpc663dm.webp"
+                            />
+                          </div>
+                        </div>
+                        <div class="content">
+                          <div class="date">
+                            <div class="d d-one">
+                              <span>Sex.</span><strong>01</strong>
+                            </div>
+                            <div class="prefix">à</div>
+                            <div class="d d-two">
+                              <span>Sab.</span><strong>02</strong>
+                            </div>
+                            <div class="moth">Set</div>
+                          </div>
+                          <div class="desc">
+                            <span class="city">São Paulo</span>
+                            <h2>Alcione</h2>
+                            <span class="place">Parque Maeda</span>
+                          </div>
+                        </div>
+                        <!--<div class="link">
+                          <a
+                            href="https://www.eventos.com.br/tag/ccxp2023"
+                            class="click"
+                            >Comprar</a
+                          >
+                        </div>-->
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="card">
+                  <a href="#" target="_blank">
+                    <div class="card1">
+                      <div class="card2">
+                        <div class="card-image .image-container">
+                          <div class="image">
+                            <img
+                              alt="cartaz do evento do Lulu Santos"
+                              class="swiper-lazy swiper-lazy-loaded"
+                              src="https://assets.bileto.sympla.com.br/eventmanager/production/1ucjprp5d39uj4j1qcucpcsf3qeqag5ff4gmi636gc4hflkvi3mifpkfa16k0ie1dhtkl3h6nud76cr3brfjqe2dh777qbf0pq8744r.jpeg"
+                            />
+                          </div>
+                        </div>
+                        <div class="content">
+                          <div class="date">
+                            <div class="d d-one">
+                              <span>Sex.</span><strong>11</strong>
+                            </div>
+                            <div class="moth">Out</div>
+                          </div>
+                          <div class="desc">
+                            <span class="city">São Paulo</span>
+                            <h2>Lulu Santos</h2>
+                            <span class="place">São Paulo Expo</span>
+                          </div>
+                        </div>
+                        <!--<div class="link">
+                          <a
+                            href="https://www.eventos.com.br/tag/ccxp2023"
+                            class="click"
+                            >Comprar</a
+                          >
+                        </div>-->
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="card">
+                  <a href="#" target="_blank">
+                    <div class="card1">
+                      <div class="card2">
+                        <div class="card-image .image-container">
+                          <div class="image">
+                            <img
+                              alt="Cartaz do evento KPOP PLAY"
+                              class="swiper-lazy swiper-lazy-loaded"
+                              src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F569739079%2F187574143764%2F1%2Foriginal.20230806-205718?w=512&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C2160%2C1080&s=97e352d359c8e5a2742b7f7ebd56991a"
+                            />
+                          </div>
+                        </div>
+                        <div class="content">
+                          <div class="date">
+                            <div class="d d-one">
+                              <span>Qui.</span><strong>30</strong>
+                            </div>
+                            <div class="prefix">à</div>
+                            <div class="d d-two">
+                              <span>Dom. </span><strong>03</strong>
+                            </div>
+                            <div class="moth">Nov / Dez</div>
+                          </div>
+                          <div class="desc">
+                            <span class="city">São Paulo</span>
+                            <h2>KPOP PLAY</h2>
+                            <span class="place">São Paulo Expo</span>
+                          </div>
+                        </div>
+                        <!--<div class="link">
+                          <a
+                            href="https://www.eventos.com.br/tag/ccxp2023"
+                            class="click"
+                            >Comprar</a
+                          >
+                        </div>-->
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="card">
+                  <a href="#" target="_blank">
+                    <div class="card1">
+                      <div class="card2">
+                        <div class="card-image .image-container">
+                          <div class="image">
+                            <img
+                              alt="cartaz do evento Meo Que Role com Mc Livinho na capa"
+                              class="swiper-lazy swiper-lazy-loaded"
+                              src="https://images.sympla.com.br/64b76a2b7f25d-xs.png"
+                            />
+                          </div>
+                        </div>
+                        <div class="content">
+                          <div class="date">
+                            <div class="d d-one">
+                              <span>Sex.</span><strong>15</strong>
+                            </div>
+                            <div class="moth">Set</div>
+                          </div>
+                          <div class="desc">
+                            <span class="city">São Paulo</span>
+                            <h2>Meo Que Rolê</h2>
+                            <span class="place">São Paulo Expo</span>
+                          </div>
+                        </div>
+                        <!--<div class="link">
+                          <a
+                            href="https://www.eventos.com.br/tag/ccxp2023"
+                            class="click"
+                            >Comprar</a
+                          >
+                        </div>-->
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="card">
+                  <a href="#" target="_blank">
+                    <div class="card1">
+                      <div class="card2">
+                        <div class="card-image .image-container">
+                          <div class="image">
+                            <img
+                              alt="cartaz do show da Ludmila"
+                              class="swiper-lazy swiper-lazy-loaded"
+                              src="https://www.boadiversao.com.br/midia/image/ludmilla-flyernovembro-boadiversao_25240.jpg"
+                            />
+                          </div>
+                        </div>
+                        <div class="content">
+                          <div class="date">
+                            <div class="d d-one">
+                              <span>Sex.</span><strong>21</strong>
+                            </div>
+                            <div class="moth">Nov</div>
+                          </div>
+                          <div class="desc">
+                            <span class="city">Rio de Janeiro</span>
+                            <h2>Ludmila</h2>
+                            <span class="place">Plaia Club</span>
+                          </div>
+                        </div>
+                        <!--<div class="link">
+                          <a
+                            href="https://www.eventos.com.br/tag/ccxp2023"
+                            class="click"
+                            >Comprar</a
+                          >
+                        </div>-->
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="card">
+                  <a href="#" target="_blank">
+                    <div class="card1">
+                      <div class="card2">
+                        <div class="card-image .image-container">
+                          <div class="image">
+                            <img
+                              alt="Cartas do show do Jão em sua Turne"
+                              class="swiper-lazy swiper-lazy-loaded"
+                              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF_qoQaTvPTVDJUGSxJA2F25TAD-5VshmBINeLS8FN64wOwi9LbOydphG8qWYVwTK_qjI&usqp=CAU"
+                            />
+                          </div>
+                        </div>
+                        <div class="content">
+                          <div class="date">
+                            <div class="d d-one">
+                              <span>Sab.</span><strong>11</strong>
+                            </div>
+                            <div class="moth">Nox</div>
+                          </div>
+                          <div class="desc">
+                            <span class="city">São Paulo</span>
+                            <h2>JÃO - Turne PIRATA</h2>
+                            <span class="place">Espaço Unimed</span>
+                          </div>
+                        </div>
+                        <!--<div class="link">
+                          <a
+                            href="https://www.eventos.com.br/tag/ccxp2023"
+                            class="click"
+                            >Comprar</a
+                          >
+                        </div>-->
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="card">
+                  <a href="#" target="_blank">
+                    <div class="card1">
+                      <div class="card2">
+                        <div class="card-image .image-container">
+                          <div class="image">
+                            <img
+                              alt="Cartas da Rolê Fest com Gloria Groove na capa"
+                              class="swiper-lazy swiper-lazy-loaded"
+                              src="https://i0.wp.com/www.picsphotopress.com/wp-content/uploads/2021/11/20211126044652.jpg?fit=612%2C612&ssl=1"
+                            />
+                          </div>
+                        </div>
+                        <div class="content">
+                          <div class="date">
+                            <div class="d d-one">
+                              <span>Quin.</span><strong>20</strong>
+                            </div>
+                            <div class="moth">Abril</div>
+                          </div>
+                          <div class="desc">
+                            <span class="city">Porto Alegre</span>
+                            <h2>Gloria Groove - Estreia da Rolê Fest</h2>
+                            <span class="place"> Pepsi on Stage </span>
+                          </div>
+                        </div>
+                        <!--<div class="link">
+                          <a
+                            href="https://www.eventos.com.br/tag/ccxp2023"
+                            class="click"
+                            >Comprar</a
+                          >
+                        </div>-->
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <div class="barra">
+        <div id="gif-container">
+          <img
+            id="animated-gif"
+            src="https://media.giphy.com/media/wbshTBnqgZAzGZWG9X/giphy.gif"
+            alt="Animated GIF"
+          />
+          <button id="pause-button"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+      </div>
+
+      <br />
+      <div class="carrosel">
+        <div class="titulo">
+          <h1>O melhor de cada cidade</h1>
+        </div>
+        <div class="swiper mySwiper slide-conteiner">
+          <div class="slide-content">
+            <div class="swiper-wrapper card-wrapper">
+              <div class="swiper-slide cards">
+                <div class="card-content">
+                  <a href="#">
+                    <img
+                      class="img"
+                      src="https://viagemegastronomia.cnnbrasil.com.br/wp-content/uploads/sites/5/2019/04/roteiro-brasilia-home.jpg"
+                      alt="Fotografia da vista de Brasilia"
+                    />
+                    <div class="test">
+                      <h2>Brasilia</h2>
+                      <p>Eventos na capital do Brasil</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide cards">
+                <div class="card-content">
+                  <a href="#">
+                    <img
+                      class="img"
+                      src="https://visitesaopaulo.com/wp-content/uploads/2021/01/AS00106-Ponte-Estaiada.jpg"
+                      alt="Fotografia da vista de São Paulo"
+                    />
+                    <div class="test">
+                      <h2>São Paulo</h2>
+                      <p>Eventos na capital de São Paulo</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide cards">
+                <div class="card-content">
+                  <a href="#">
+                    <img
+                      class="img"
+                      src="https://www.civitatis.com/blog/wp-content/uploads/2022/10/panoramica-rio-janeiro-brasil.jpg"
+                      alt="Fotografia da vista de Rio de Janeiro"
+                    />
+                    <div class="test">
+                      <h2>Rio de Janeiro</h2>
+                      <p>Eventos a capital de Rio de Janeiro</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide cards">
+                <div class="card-content">
+                  <a href="#">
+                    <img
+                      class="img"
+                      src="https://vidadeturista.com/wp-content/uploads/2009/03/recife-pe.jpg"
+                      alt="Fotografia da vista de Salvador"
+                    />
+                    <div class="test">
+                      <h2>Salvador</h2>
+                      <p>Eventos na capital da Bahia</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide cards">
+                <div class="card-content">
+                  <a href="#">
+                    <img
+                      class="img"
+                      src="https://www.viajenaviagem.com/wp-content/uploads/2020/02/belo-horizonte-pampulha.jpg"
+                      alt="Fotografia da vista de Belo Horizonte"
+                    />
+                    <div class="test">
+                      <h2>Belo Horizonte</h2>
+                      <p>Eventos na capital de Minas Gerais</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="swiper-slide cards">
+                <div class="card-content">
+                  <a href="#">
+                    <img
+                      class="img"
+                      src="https://media.staticontent.com/media/pictures/04641818-297a-4f28-b635-b15e2fb31087"
+                      alt="Fotografia da vista de Curitiba"
+                    />
+                    <div class="test">
+                      <h2>Curitiba</h2>
+                      <p>Eventos na capital do estado do Paraná</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide cards">
+                <div class="card-content">
+                  <a href="#">
+                    <img
+                      class="img"
+                      src="https://a.cdn-hotels.com/gdcs/production54/d1484/9bba5297-47b5-46e0-931b-abcc17053949.jpg?impolicy=fcrop&w=800&h=533&q=medium"
+                      alt="Fotografia da vista de Porto Alegre"
+                    />
+                    <div class="test">
+                      <h2>Porto Alegre</h2>
+                      <p>Eventos na capital de Rio Grande do Sul</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide cards">
+                <div class="card-content">
+                  <a href="#">
+                    <img
+                      class="img"
+                      src="https://www.redesulhospedagens.com.br/sistema/admin/media/uploads/cidades/ponte-floripa.jpg"
+                      alt="Fotografia da vista de Florianópolis"
+                    />
+                    <div class="test">
+                      <h2>Florianópolis</h2>
+                      <p>Eventos na capital de Santa Catarina</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next btt-swipper"></div>
+          <div class="swiper-button-prev btt-swipper"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+      <!--div>div*2>a-->
+
+      <br />
+      <footer id="footer">
+        <div class="footer-logo">
+          <img src="./img/Blue.png" alt="Logo" />
+        </div>
+
+        <div class="footer-link">
+          <div class="footer-lista">
+            <ul>
+              <li><b>Atendimento</b></li>
+              <li>
+                <a href="#" target="_blank" rel="author"
+                  >Política de Vendas, Trocas e Privacidade</a
+                >
+              </li>
+              <li>
+                <a href="#" target="_blank" rel="author"
+                  >Termos e condições de compra</a
+                >
+              </li>
+              <li><a href="#" target="_blank" rel="author">Fale conosco</a></li>
+            </ul>
+            <ul>
+              <li><b>Institucional</b></li>
+              <li>
+                <a href="#" target="_blank" rel="author">Sobre a livraria</a>
+              </li>
+              <li>
+                <a href="#" target="_blank" rel="author">Livraria Plus</a>
+              </li>
+              <li>
+                <a href="#" target="_blank" rel="author"
+                  >Relações com Investidores</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-blocos">
+            <div class="footer-app">
+              <b>Download App</b>
+              <ul class="footer-baixar">
+                <li>
+                  <a href="#"
+                    ><img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/1200px-Download_on_the_App_Store_Badge.svg.png"
+                      alt="app store"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="https://swanlibraries.net/wp-content/uploads/2019/03/google-play_modified-1024x301.png"
+                      alt="google play"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-cards">
+              <b>Formas de Pagamento</b>
+              <ul class="grid-cards">
+                <li>
+                  <a href="#"
+                    ><img
+                      src="https://images.prismic.io/pix-site/233281d3-2286-49be-8d9b-8f4183c20030_logo-pix_250x250.png?auto=compress,format&rect=0,57,250,135&w=1200&h=650"
+                      alt="cartão pix"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="https://w7.pngwing.com/pngs/314/877/png-transparent-visa-logo-credit-card-debit-card-mastercard-logo-visa-go-blue-text-trademark.png"
+                      alt="cartão visa"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/MasterCard_Logo.svg/800px-MasterCard_Logo.svg.png"
+                      alt="cartão mastercard"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="https://logodownload.org/wp-content/uploads/2017/04/elo-logo-10-1.png"
+                      alt="cartão elo"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="fotter-fotter">
+          <div class="efBApl">
+            <div class="jHTgmc">
+              <h5>
+                <a target="_blank" href="#" rel="noopener noreferrer">Home</a>
+              </h5>
+              <h5>
+                <a target="_blank" href="#" rel="noopener noreferrer">Sobre</a>
+              </h5>
+              <h5>
+                <a target="_blank" href="#" rel="noopener noreferrer">Blog</a>
+              </h5>
+              <h5>
+                <a target="_blank" href="#" rel="noopener noreferrer"
+                  >Carreiras</a
+                >
+              </h5>
+              <h5>
+                <a target="_blank" href="#" rel="noopener noreferrer"
+                  >Termos e Políticas</a
+                >
+              </h5>
+              <h5>
+                <a target="_blank" href="#" rel="noopener noreferrer"
+                  >Ética e conduta</a
+                >
+              </h5>
+            </div>
+            <ul class="kqrytd">
+              <li>
+                <a
+                  target="_blank"
+                  href="http://www.facebook.com"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M12 2.5c-5.225 0-9.5 4.306-9.5 9.568 0 4.785 3.46 8.749 8.007 9.432v-6.698H8.132v-2.734h2.443V9.95c0-2.392 1.425-3.691 3.596-3.691 1.018 0 2.104.205 2.104.205v2.324h-1.221c-1.154 0-1.561.752-1.561 1.503v1.777h2.646l-.407 2.734h-2.24V21.5c4.547-.683 8.008-4.647 8.008-9.432C21.5 6.806 17.225 2.5 12 2.5z"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://twitter.com"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="#191F28"
+                      fill-rule="nonzero"
+                      d="M21 6.846c-.525.77-1.125 1.462-1.875 1.923v.462c0 5-3.75 10.769-10.5 10.769-2.1 0-4.05-.615-5.625-1.692.3 0 .6.077.9.077 1.725 0 3.3-.616 4.575-1.616-1.65 0-3-1.154-3.45-2.615.225.077.45.077.675.077.3 0 .675-.077.975-.154-1.725-.308-3-1.846-3-3.692v-.077a3.15 3.15 0 0 0 1.65.461c-.9-.692-1.575-1.846-1.575-3.154 0-.692.15-1.384.525-1.923a10.305 10.305 0 0 0 7.575 3.923c-.075-.307-.075-.538-.075-.846C11.775 6.692 13.425 5 15.45 5c1.05 0 2.025.462 2.7 1.23.825-.153 1.65-.46 2.325-.922-.3.846-.825 1.615-1.65 2.077.825-.077 1.5-.231 2.175-.539z"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                  >
+                    <path
+                      fill="#191F28"
+                      fill-rule="evenodd"
+                      d="M19.921 7a5.004 5.004 0 0 1 5.004 5.004v7.992A5.004 5.004 0 0 1 19.921 25h-7.917C9.241 24.925 7 22.685 7 19.921v-7.917A5.004 5.004 0 0 1 12.004 7h7.917zm1.046 2.988c0 .522.448.97.97.97a.989.989 0 0 0 .972-.97.989.989 0 0 0-.971-.971.989.989 0 0 0-.971.97zm-10.008 5.975a5.004 5.004 0 1 0 10.008 0 5.004 5.004 0 0 0-10.008 0zm7.991 0a2.996 2.996 0 0 1-2.987 2.987 2.996 2.996 0 0 1-2.988-2.987 2.996 2.996 0 0 1 2.988-2.988 2.996 2.996 0 0 1 2.987 2.988z"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com"
+                  rel="noopener noreferrer"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="#191F28"
+                      fill-rule="evenodd"
+                      d="M15.975 3A5.025 5.025 0 0 1 21 8.025v8.025a5.025 5.025 0 0 1-5.025 5.025h-7.95C5.25 21 3 18.75 3 15.975v-7.95A5.025 5.025 0 0 1 8.025 3h7.95zm-2.531 7.294h-2.232v6.103h2.232V13.05l.007-.165c.076-.834.726-.95.912-.95.196 0 .787.196.787 1.115v3.347h2.1V13.05l-.004-.223c-.065-1.747-.891-2.533-1.9-2.533-1.05 0-1.64.328-1.902.853v-.853zm-4.069-.066H7.144v6.103h2.231v-6.103zm-1.05-3.216c-.787 0-1.247.46-1.247 1.05 0 .591.46 1.05 1.181 1.05.722 0 1.182-.459 1.182-1.05 0-.59-.46-1.05-1.116-1.05z"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <span class="footer-cep"
+            >Todos os direitos reservados © Copyright 2023
+          </span>
+        </div>
+      </footer>
+    </div>
+    <script src="./js/script.js"></script>
+    <script src="./js/glider.min.js"></script>
+    <script type="module" src="./js/scriptMusic.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script>
+      new Glider(document.querySelector('.glider'), {
+        draggable: true,
+        arrows: {
+          prev: '.glider-prev',
+          next: '.glider-next'
+        },
+        responsive: [
+          {
+            breakpoint: 700,
+            settings: {
+              slidesToScroll: 1,
+              slidesToShow: 1,
+              itemWidth: 50
+            }
+          },
+          {
+            breakpoint: 800,
+            settings: {
+              slidesToScroll: 2,
+              slidesToShow: 2,
+              itemWidth: 70
+            }
+          },
+          {
+            breakpoint: 950,
+            settings: {
+              slidesToScroll: 3,
+              slidesToShow: 2.5,
+              itemWidth: 100
+            }
+          },
+          {
+            breakpoint: 1150,
+            settings: {
+              slidesToScroll: 2,
+              slidesToShow: 3,
+              itemWidth: 100,
+              duration: 0.25
+            }
+          },
+          ,
+          {
+            breakpoint: 1400,
+            settings: {
+              slidesToScroll: 2,
+              slidesToShow: 3.5,
+              itemWidth: 150,
+              duration: 0.25
+            }
+          },
+          {
+            breakpoint: 1700,
+            settings: {
+              slidesToScroll: 2,
+              slidesToShow: 4,
+              itemWidth: 150,
+              duration: 0.25
+            }
+          },
+          {
+            breakpoint: 1800,
+            settings: {
+              slidesToScroll: 2,
+              slidesToShow: 5,
+              itemWidth: 150,
+              duration: 0.25
+            }
+          }
+        ]
+      })
+
+      var swiper = new Swiper('.slide-content', {
+        slidesPerGroup: 1,
+        spaceBetween: 20,
+        centerSlides: true,
+        fade: true,
+        slidesPerGroupSkip: 1,
+        grabCursor: true,
+        keyboard: {
+          enabled: true
+        },
+
+        scrollbar: {
+          el: '.swiper-scrollbar'
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+          dynamicBullets: true
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1
+          },
+          750: {
+            slidesPerView: 2
+          },
+          1050: {
+            slidesPerView: 3
+          },
+          1400: {
+            slidesPerView: 4
+          },
+          1750: {
+            slidesPerView: 5
+          }
+        }
+      })
+    </script>
+  </body>
+</html>
